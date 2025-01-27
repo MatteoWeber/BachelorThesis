@@ -1,0 +1,9 @@
+Upload external data
+pio run --target uploadfs
+
+Network
+192.168.4.1 
+
+WiFi
+Name: CubeNetwork
+Password: TestCube1234

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "TransmitterSketchESP8266",
+			"path": "../../TransmitterSketchESP8266"
+		},
+		{
+			"path": "../../PythonData"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cmath": "cpp"
+		}
+	}
+}

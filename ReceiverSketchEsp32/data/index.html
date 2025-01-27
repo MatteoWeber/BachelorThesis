@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP32 Application Control</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body onload="loadApplications()">
+    <div class="card">
+      <h2>Applications</h2>
+      <label for="application">Choose an Application:</label>
+      <div class="select-wrapper">
+        <select name="application" id="application">
+          <!-- Options will be dynamically populated -->
+        </select>
+      </div>
+      <button onclick="selectApplication()">Select</button>
+      <p id="status">No application selected yet.</p>
+    </div>
+
+    <!-- Application stats card -->
+    <div class="card" id="application-stats" style="display: none">
+      <h2>Application Stats</h2>
+
+      <!-- Button container -->
+      <div class="button-container">
+        <button onclick="startInfoUpdates()">Start Application</button>
+        <button onclick="stopInfoUpdates()">Stop Application</button>
+      </div>
+
+      <div id="stats-table">
+        <div class="row">
+          <div class="label-cell">Cube</div>
+          <div class="data-cell" id="cube-1-name">Cube 1</div>
+          <div class="data-cell" id="cube-2-name">Cube 2</div>
+          <div class="data-cell" id="cube-3-name">Cube 3</div>
+          <div class="data-cell" id="cube-4-name">Cube 4</div>
+        </div>
+
+        <div class="row">
+          <div class="label-cell">Top Face</div>
+          <div class="data-cell" id="cube-1-topface">N/A</div>
+          <div class="data-cell" id="cube-2-topface">N/A</div>
+          <div class="data-cell" id="cube-3-topface">N/A</div>
+          <div class="data-cell" id="cube-4-topface">N/A</div>
+        </div>
+
+        <div class="row">
+          <div class="label-cell">Accel X</div>
+          <div class="data-cell" id="cube-1-accelX">N/A</div>
+          <div class="data-cell" id="cube-2-accelX">N/A</div>
+          <div class="data-cell" id="cube-3-accelX">N/A</div>
+          <div class="data-cell" id="cube-4-accelX">N/A</div>
+        </div>
+
+        <div class="row">
+          <div class="label-cell">Accel Y</div>
+          <div class="data-cell" id="cube-1-accelY">N/A</div>
+          <div class="data-cell" id="cube-2-accelY">N/A</div>
+          <div class="data-cell" id="cube-3-accelY">N/A</div>
+          <div class="data-cell" id="cube-4-accelY">N/A</div>
+        </div>
+
+        <div class="row">
+          <div class="label-cell">Accel Z</div>
+          <div class="data-cell" id="cube-1-accelZ">N/A</div>
+          <div class="data-cell" id="cube-2-accelZ">N/A</div>
+          <div class="data-cell" id="cube-3-accelZ">N/A</div>
+          <div class="data-cell" id="cube-4-accelZ">N/A</div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
